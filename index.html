@@ -7,15 +7,45 @@
     <title>Vite App</title>
   </head>
   <body>
-    <header class="heade">
+    <header class="header">
       <div class="header-left">
-        <img
-          class="weather-icon large"
-          src="icons/sun.svg"
-          data="current-con"
-        />
+        <img class="weather-icon large" src="icons/sun.svg" data-current-icon />
+        <div class="header-current-temp">
+          <span data-current-temp>31</span>&deg;
+          <!--select span without touching degree simple-->
+        </div>
+      </div>
+
+      <div class="header-right">
+        <div class="info-group">
+          <div class="label">HIGH</div>
+          <div><span data-current-high>32</span>&deg;</div>
+        </div>
+        <div class="info-group">
+          <div class="label">FL High</div>
+          <div><span data-current-fl-high>27</span>&deg;</div>
+        </div>
+        <div class="info-group">
+          <div class="label">WIND</div>
+          <div><span data-current-wind>9</span>mph</div>
+        </div>
+        <div class="info-group">
+          <div class="label">LOW</div>
+          <div><span data-current-low>19</span>&deg;</div>
+        </div>
+        <div class="info-group">
+          <div class="label">FL LOW</div>
+          <div><span data-current-fl-low>12</span>&deg;</div>
+        </div>
+        <div class="info-group">
+          <div class="label">PRECIP</div>
+          <div>
+            <span data-current-precip>0.1</span
+            ><span class="value-sub-info">in</span>
+          </div>
+        </div>
       </div>
     </header>
-    <script type="module" src="/main.js"></script>
   </body>
+  <script type="module" src="/main.js"></script>
 </html>
